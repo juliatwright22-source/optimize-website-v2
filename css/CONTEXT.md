@@ -233,3 +233,32 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Attempted Higgsfield AI image generation for a downtown Tulsa hero — account is at 0 credits on free plan; generation not possible without purchasing credits
 - Swapped home page hero background from `tulsa2.jpg` to `pexels-tomfisk-12124482.jpg` (Pexels photo of downtown Tulsa provided by client)
 - **Still pending:** About Us philosophy and values copy; News & Updates content (dates, headlines, excerpts for all 6 cards); Our Story founder photo; contact page hero sub-sentence; domain/hosting setup; live contact form test; decide whether to delete transition-demo.html; Higgsfield credits if AI images wanted in future
+
+### Session 9 — 2026-06-23
+- Executed full visual design overhaul in `css/styles.css` — premium architectural style inspired by high-end law and asset management firms:
+  - Typography: `body` updated to 15.5px / 1.85 line-height / `#2d2d2d` charcoal; `h2` tighter clamp + `-0.02em` letter-spacing; `h3` weight 600 + `-0.01em` letter-spacing; `.btn` 1px border, `border-radius: 2px`, cubic-bezier transition
+  - Structural framing: `.section` gained faint green bottom border; `.section--off` gained crisp top + bottom border lines
+  - `.why-section blockquote` restyled as framed callout box: white background, 40px padding, soft shadow, gold left accent, `border-radius: 0 4px 4px 0`
+  - `.testimonial-section__inner` upgraded: 800px max-width, glass overlay background, gold frame border, 50px/40px padding
+  - `.team-card` and `.news-card` rewritten as floating cards: borderless, `border-radius: 4px`, layered soft shadow, lift + deep-green tint shadow on hover
+  - `.story-image-placeholder` and `.team-card__photo` gained offset geometric shadow frame: `box-shadow: 6px 6px 0px var(--green-dark)`; `.team-card__photo img` gained `border: 1px solid var(--border)`
+- Replaced all structural placeholders with real Unsplash images across 4 pages:
+  - `index.html`: hero background swapped to Unsplash corporate architecture photo (1600px)
+  - `our-story.html`: gray placeholder div replaced with real collaborative session photo (`object-fit: cover`)
+  - `our-team.html`: all 4 headshots kept local files as primary; added `onerror` fallback to Unsplash corporate portraits (with `transform: none` reset on fallback)
+  - `news.html`: all 6 cards now have real images — cards 1–3 swapped local files for Unsplash editorial photos; cards 4–6 replaced text placeholders with `<img>` tags
+- Populated `about.html` with all real content drawn from COMPANY INFORMATION.pdf and company LinkedIn:
+  - Page hero: "Most advisory firms will tell you they're different. We'd rather show you."
+  - Philosophy headline: "The Best Counsel Is Personal, Precise, and Earned."
+  - Philosophy paragraph: mid-market inflection point framing from company LinkedIn overview
+  - All 5 core values (Integrity, Resourcefulness, Diligence, Hard Work, Compassion) with one-sentence descriptions
+  - Our Story teaser and Our Team teaser
+- Clarified that About Us parent nav link is correct behavior — clicking goes to `about.html`, hovering reveals dropdown (standard pattern for professional sites)
+- News & Updates page — client putting a pin in this; will decide later what to replace placeholder articles with
+- Home page testimonial (Nick O., VP of Sales & Marketing, Hershey's Metal Meister) still pending — content exists in PDF, not yet placed
+- Contact page hero sub-sentence still placeholder
+- Initialized git repository in `optimize-website-v2` folder; made initial commit of all 25 files
+- Pushed project to GitHub: https://github.com/juliatwright22-source/optimize-website-v2.git
+- Provided GitHub Pages setup instructions for getting a live preview URL
+- Confirmed workflow: changes do NOT auto-push to GitHub — must manually push at end of each session; I will handle push commands when asked
+- **Still pending:** Home page testimonial; News & Updates page content (client deciding approach); contact page hero sub-sentence; GitHub Pages setup; domain connection (client not ready yet); live contact form test
