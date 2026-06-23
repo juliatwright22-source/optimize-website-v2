@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Optimize Strategic Advisors</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header scrolled">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="index.html" class="header-logo">
+          <!-- Place your logo file in /images/ and update the filename in src below -->
+          <img src="images/logo.jpg" alt="Optimize Strategic Advisors" class="header-logo__img">
+          <div class="header-logo__wordmark">
+            <span class="header-logo__name">OPTIMIZE <span class="header-logo__name-light">STRATEGIC ADVISORS</span></span>
+            <span class="header-logo__tagline">Built for the complexity you face.</span>
+          </div>
+        </a>
+
+        <ul class="nav-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="about.html">About Us</a>
+            <ul class="nav-dropdown">
+              <li><a href="our-story.html">Our Story</a></li>
+              <li><a href="our-team.html">Our Team</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News &amp; Updates</a></li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="about.html" class="nav-mobile__dropdown-trigger">About Us ▾</a>
+        <ul class="nav-mobile-dropdown">
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="news.html">News &amp; Updates</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </header>
+
+
+  <!-- ============================================================
+       PAGE HERO
+  ============================================================ -->
+  <section class="page-hero">
+    <div class="container reveal-slide">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>[One sentence inviting contact — warm, direct, no pressure. Should feel like an open door, not a sales pitch.]</p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT LAYOUT
+  ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- ---- FORM ---- -->
+        <div>
+          <!--
+            HUBSPOT FORM INTEGRATION
+            This form submits via fetch() to the HubSpot Forms API.
+            Open js/main.js and insert your values at:
+              HUBSPOT_PORTAL_ID  — found in HubSpot Settings > Account Setup > Account Details
+              HUBSPOT_FORM_GUID  — found in HubSpot Marketing > Forms > [your form] > Share > Embed Code
+          -->
+          <form id="contact-form" novalidate>
+            <div class="contact-form">
+
+              <div class="contact-form__group">
+                <label for="cf-first-name">First Name</label>
+                <input type="text" id="cf-first-name" name="firstname" autocomplete="given-name" required />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="cf-last-name">Last Name</label>
+                <input type="text" id="cf-last-name" name="lastname" autocomplete="family-name" required />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" required />
+              </div>
+
+              <div class="contact-form__group">
+                <label for="cf-phone">Phone Number</label>
+                <input type="tel" id="cf-phone" name="phone" autocomplete="tel" />
+              </div>
+
+              <div class="contact-form__group contact-form__group--full">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" required></textarea>
+              </div>
+
+              <div class="contact-form__actions">
+                <button type="submit" class="btn btn--primary">Send Message</button>
+              </div>
+
+            </div><!-- /.contact-form -->
+
+            <div id="contact-success" class="contact-form__success">
+              Thank you — your message has been received. We'll be in touch shortly.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- ---- CONTACT DETAILS ---- -->
+        <div>
+          <h3>Reach Us Directly</h3>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">Email</span>
+            <span class="contact-detail__value">
+              <a href="mailto:info@optimizestrategic.com">info@optimizestrategic.com</a>
+            </span>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">Phone</span>
+            <span class="contact-detail__value">
+              <a href="tel:9189951088">(918) 995-1088</a>
+            </span>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">LinkedIn</span>
+            <span class="contact-detail__value">
+              <a href="https://www.linkedin.com/in/jonathan-laboube-cpa-1780a377" target="_blank" rel="noopener">Connect on LinkedIn</a>
+            </span>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__label">Location</span>
+            <span class="contact-detail__value">Tulsa, Oklahoma</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand__name">OPTIMIZE STRATEGIC ADVISORS</div>
+          <div class="footer-brand__tagline">Built for the complexity you face.</div>
+          <p>Tulsa, Oklahoma</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:info@optimizestrategic.com">info@optimizestrategic.com</a></li>
+            <li><a href="tel:9189951088">(918) 995-1088</a></li>
+            <li><a href="https://www.linkedin.com/company/optimize-strategic-advisors" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Optimize Strategic Advisors. All rights reserved.</span>
+        <span>Tulsa, Oklahoma</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

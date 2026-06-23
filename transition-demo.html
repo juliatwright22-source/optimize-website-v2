@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Transition Demo — scroll down to preview each style</title>
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  .demo-spacer { height: 90vh; display:flex; align-items:center; justify-content:center; }
+  .demo-spacer p { font-family:'Poppins',sans-serif; color: var(--mid-gray); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .demo-block { max-width: 640px; margin: 0 auto; padding: 100px 32px; }
+  .demo-block h2 { color: var(--green-dark); margin-bottom: 12px; }
+  .demo-block p { font-size: 1rem; }
+  .demo-label { display:inline-block; background: var(--gold); color:#fff; font-family:'Poppins',sans-serif; font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; padding: 6px 14px; margin-bottom: 20px; }
+
+  /* 1. Fade only */
+  .t-fade { opacity: 0; transition: opacity 1s ease; }
+  .t-fade.is-visible { opacity: 1; }
+
+  /* 2. Fade + rise */
+  .t-rise { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .t-rise.is-visible { opacity: 1; transform: translateY(0); }
+
+  /* 3. Slide from left (slower, subtler than before) */
+  .t-slide { opacity: 0; transform: translateX(-24px); transition: opacity 1s ease, transform 1s ease; }
+  .t-slide.is-visible { opacity: 1; transform: translateX(0); }
+
+  /* 4. Soft scale + fade */
+  .t-scale { opacity: 0; transform: scale(0.97); transition: opacity 0.9s ease, transform 0.9s ease; }
+  .t-scale.is-visible { opacity: 1; transform: scale(1); }
+</style>
+</head>
+<body>
+
+<div class="demo-spacer"><p>Scroll down slowly to preview each transition ↓</p></div>
+
+<div class="demo-block t-fade">
+  <span class="demo-label">Option 1 — Fade Only</span>
+  <h2>Subtle Fade-In</h2>
+  <p>The text simply appears, gradually becoming visible with no movement at all. This is the most understated option — calm, quiet, and unobtrusive.</p>
+</div>
+
+<div class="demo-spacer"></div>
+
+<div class="demo-block t-rise">
+  <span class="demo-label">Option 2 — Fade + Slight Rise</span>
+  <h2>Fade and Rise</h2>
+  <p>The text fades in while gently rising into place from slightly below. This is one of the most common, polished effects used on professional sites — noticeable but still restrained.</p>
+</div>
+
+<div class="demo-spacer"></div>
+
+<div class="demo-block t-slide">
+  <span class="demo-label">Option 3 — Gentle Slide from Left</span>
+  <h2>Slide In From the Left</h2>
+  <p>A softer, slower version of the effect we tried before — shorter travel distance and a slower pace so it feels gentle rather than dramatic.</p>
+</div>
+
+<div class="demo-spacer"></div>
+
+<div class="demo-block t-scale">
+  <span class="demo-label">Option 4 — Soft Scale + Fade</span>
+  <h2>Gentle Scale-In</h2>
+  <p>The text fades in while growing very slightly from a slightly smaller size. Subtle and a little more dynamic without ever feeling flashy.</p>
+</div>
+
+<div class="demo-spacer"><p>End of preview</p></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var els = document.querySelectorAll('.demo-block');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  els.forEach(function (el) { observer.observe(el); });
+});
+</script>
+
+</body>
+</html>
