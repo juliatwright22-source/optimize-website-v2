@@ -262,3 +262,21 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Provided GitHub Pages setup instructions for getting a live preview URL
 - Confirmed workflow: changes do NOT auto-push to GitHub — must manually push at end of each session; I will handle push commands when asked
 - **Still pending:** Home page testimonial; News & Updates page content (client deciding approach); contact page hero sub-sentence; GitHub Pages setup; domain connection (client not ready yet); live contact form test
+
+### Session 10 — 2026-06-29
+- Discovered `images/optimize-hero-broll.mp4` was sitting in the project folder untracked — city skyline broll footage
+- Replaced the static Unsplash hero image in `index.html` with a looping `<video>` element:
+  - `autoplay muted loop playsinline` attributes for cross-browser autoplay support
+  - `poster` set to the Unsplash corporate architecture photo as a fallback while video loads
+  - Uses the existing `.hero__bg-img` CSS class — no style changes needed
+- Committed both `index.html` and `images/optimize-hero-broll.mp4` to GitHub (MP4 is 92.6 MB — GitHub warned it exceeds recommended 50 MB but accepted it; no action needed)
+- Decided to host on **Netlify** instead of GitHub Pages — better custom domain support and auto-deploys from GitHub
+- Discussed domain options: recommended pointing `optimizestrategic.com` to Netlify via DNS rather than transferring the domain registrar — faster and simpler
+- **Still pending:** Home page testimonial (Nick O., VP of Sales & Marketing, Hershey's Metal Meister — quote in PDF); contact page hero sub-sentence; News & Updates page content; Netlify setup; domain connection; live HubSpot form test; decide whether to delete transition-demo.html
+
+### Session 11 — 2026-06-29
+- Added Google Analytics 4 tracking snippet to all 7 HTML pages (index, about, our-story, our-team, services, news, contact)
+- Initial GA4 measurement ID (G-KHL5KRGG6Z) was replaced after client cancelled and recreated the Google Analytics account
+- Final GA4 measurement ID in use: **G-EYFRDF4WG7**
+- GA4 will begin tracking once the site is live on Netlify with the custom domain
+- **Still pending:** Home page testimonial; contact page hero sub-sentence; News & Updates page content; Netlify setup; domain connection; live HubSpot form test; decide whether to delete transition-demo.html
