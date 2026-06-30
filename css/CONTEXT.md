@@ -280,3 +280,23 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Final GA4 measurement ID in use: **G-EYFRDF4WG7**
 - GA4 will begin tracking once the site is live on Netlify with the custom domain
 - **Still pending:** Home page testimonial; contact page hero sub-sentence; News & Updates page content; Netlify setup; domain connection; live HubSpot form test; decide whether to delete transition-demo.html
+
+### Session 12 — 2026-06-30
+- Added Nick O. (VP of Sales & Marketing, Hershey's Metal Meister) testimonial to home page — full quote placed in testimonial section
+- Updated contact page hero sub-sentence to "We'd love to hear from you."
+- Changed page banner underline from green gradient to solid gold across all inner pages
+- Removed News & Updates from all navigation (desktop, mobile, footer) on all 7 pages — page file kept intact for future use
+- Reordered services page to match home page: Fractional CFO → Commercial Excellence → Organizational & Growth Advisory Services
+- Replaced Executive Coaching service (section 3) with new "Organizational & Growth Advisory Services" — full new paragraph and 8 bullets
+- Updated home page hero descriptor: "Executive Coaching" → "Advisory Services"
+- Updated home page service snapshot section 3 heading to "Organizational & Growth Advisory Services" with new description
+- Updated home page hero headline to say "advisory services" instead of "executive coaching"
+- Renamed "Commercial Excellence & Enterprise Advisory" to "Commercial Excellence" on both home and services pages
+- Updated services page section 2, bullet 2: "VP of Sales" → "Sales executive and commercial leadership advisory"
+- Removed "Strategic planning and business development" bullet from services page section 2
+- Removed shadow from team card photos; fixed photo fill using absolute positioning
+- Softened Our Story image box shadow from solid green to `rgba(15,69,41,0.35)`
+- Replaced Unsplash placeholder on Our Story page with `images/ourstory.PNG`
+- Updated Jonathan LaBoube's headshot from `jonathanimage.png` to `images/jonathan.png`
+- All changes pushed to GitHub
+- **Still pending:** Netlify setup and deploy; domain connection (optimizestrategic.com); live HubSpot form test; decide whether to delete transition-demo.html and news.html
