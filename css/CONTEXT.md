@@ -5,7 +5,7 @@ Static multi-page website redesign for Optimize Strategic Advisors, a boutique s
 advisory firm based in Tulsa, Oklahoma. Small senior-level team, 2-10 employees.
 
 **Website:** www.optimizestrategic.com
-**Contact:** info@optimizestrategic.com | (918) 995-1088
+**Contact:** info@optimizestrategic.com | (918) 351-2426
 **Project folder:** optimize-website-v2 (on desktop)
 
 ---
