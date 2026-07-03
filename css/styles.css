@@ -965,6 +965,10 @@ img { display: block; max-width: 100%; height: auto; }
   .nav-desktop { display: none; }
   .nav-toggle { display: flex; }
 
+  .header-logo img { height: 44px; }
+  .header-logo__name { font-size: 0.78rem; }
+  .header-logo__tagline { font-size: 0.52rem; }
+
   .services-snapshot { grid-template-columns: 1fr; }
   .services-snapshot__item:last-child { grid-column: auto; }
   .values-list { grid-template-columns: 1fr 1fr; }
@@ -983,6 +987,9 @@ img { display: block; max-width: 100%; height: auto; }
   .values-list { grid-template-columns: 1fr; }
   .hero__content { padding: 60px 20px; }
   h1 { font-size: 1.75rem; }
+
+  .header-logo__wordmark { display: none; }
+  .header-logo img { height: 40px; }
 }
 
 /* ============================================================
