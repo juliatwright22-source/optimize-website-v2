@@ -324,3 +324,10 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Revised mobile header approach: restored "OPTIMIZE STRATEGIC ADVISORS" wordmark text on mobile (un-did the `display: none`); text now wraps naturally instead of being hidden, with `max-width: calc(100% - 60px)` on the logo link to ensure the hamburger always has room
 - Netlify free plan build minutes exhausted — pending changes queued in GitHub will deploy when minutes reset or plan is upgraded
 - **Still pending:** Verify all pending changes go live once Netlify deploys resume; contact form live test; decide whether to delete transition-demo.html and news.html
+
+### Session 15 — 2026-07-03
+- Upgraded Netlify plan to resolve exhausted build minutes; triggered manual deploy to pick up 3 skipped commits
+- Reverted nav bar height back to original 96px (desktop) and 64px (mobile); logo back to 60px (desktop) and 44px (mobile) — previous increase was too large
+- Replaced nav logo from `images/newheroicon.png` to `images/newhero.png` across all 7 pages — new fixed version of the logo image
+- Pushed `images/newhero.png` to GitHub
+- **Still pending:** Contact form live test; decide whether to delete transition-demo.html and news.html
