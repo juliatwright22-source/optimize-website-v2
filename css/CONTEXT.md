@@ -300,3 +300,27 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Updated Jonathan LaBoube's headshot from `jonathanimage.png` to `images/jonathan.png`
 - All changes pushed to GitHub
 - **Still pending:** Netlify setup and deploy; domain connection (optimizestrategic.com); live HubSpot form test; decide whether to delete transition-demo.html and news.html
+
+### Session 13 — 2026-07-01
+- Updated phone number to (918) 351-2426 across all 7 pages and CONTEXT.md
+- Deployed site to Netlify — project ID: `singular-lokum-a2e6d3`, temporary URL: `singular-lokum-a2e6d3.netlify.app`
+- Connected custom domain: `optimizestrategic.com` — nameservers changed from BrandCrowd to Netlify DNS (dns1–dns4.p09.nsone.net)
+- SSL certificate provisioned via Let's Encrypt (auto by Netlify)
+- www redirect confirmed working (www.optimizestrategic.com → optimizestrategic.com)
+- HubSpot spam issue fixed: added `optimizestrategic.com` to trusted domains in HubSpot → Settings → Tracking & Analytics → Tracking Code → Advanced Tracking → Additional site domains
+- Updated Brett Reel bio in `our-team.html` with full revised biography (Baker Hughes, NOV, Extract Companies career history)
+- Netlify GitHub auto-deploy broke after Brett bio push — error: "Could not read from remote repository. Host key verification failed."
+- Fixed by re-linking GitHub repo in Netlify: Project Configuration → Build & deploy → Continuous deployment → Manage repository → Link to a different repository → selected same repo
+- Deploy succeeded after reconnect (commit ca4f38e Published at 5:25 PM)
+- **Still pending:** Verify contact form on live domain; check Microsoft/Outlook email still working after nameserver change; decide whether to delete transition-demo.html and news.html
+
+### Session 14 — 2026-07-02/03
+- Replaced logo image from `images/logo.jpg` to `images/newheroicon.png` across all 7 HTML pages
+- Pushed `images/newheroicon.png` to GitHub (file existed locally but had not been committed)
+- Fixed mobile header overlap: at 768px reduced logo to 44px and shrunk wordmark font; at 480px hid wordmark entirely (later revised — see below)
+- Increased hero descriptor font size from `0.7rem` to `0.95rem` and weight from 500 to 600 to better connect visually to the 01/02/03 service cards below
+- Increased nav bar height from 96px to 180px (desktop) and logo height from 92px to 168px to fill the banner
+- Mobile nav height increased from 64px to 100px; mobile logo increased to 88px
+- Revised mobile header approach: restored "OPTIMIZE STRATEGIC ADVISORS" wordmark text on mobile (un-did the `display: none`); text now wraps naturally instead of being hidden, with `max-width: calc(100% - 60px)` on the logo link to ensure the hamburger always has room
+- Netlify free plan build minutes exhausted — pending changes queued in GitHub will deploy when minutes reset or plan is upgraded
+- **Still pending:** Verify all pending changes go live once Netlify deploys resume; contact form live test; decide whether to delete transition-demo.html and news.html
