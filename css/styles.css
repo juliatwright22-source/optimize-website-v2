@@ -988,8 +988,9 @@ img { display: block; max-width: 100%; height: auto; }
   .hero__content { padding: 60px 20px; }
   h1 { font-size: 1.75rem; }
 
-  .header-logo__wordmark { display: none; }
   .header-logo img { height: 40px; }
+  .header-logo__name { font-size: 0.65rem; white-space: normal; }
+  .header-logo { gap: 8px; max-width: calc(100% - 60px); }
 }
 
 /* ============================================================
