@@ -331,3 +331,15 @@ Integrity · Resourcefulness · Diligence · Hard Work · Compassion
 - Replaced nav logo from `images/newheroicon.png` to `images/newhero.png` across all 7 pages — new fixed version of the logo image
 - Pushed `images/newhero.png` to GitHub
 - **Still pending:** Contact form live test; decide whether to delete transition-demo.html and news.html
+
+### Session 16 — 2026-08-03
+- Began rebrand to match new logo design
+- Removed "OPTIMIZE STRATEGIC ADVISORS" wordmark text and old logo from header on all 7 pages — now shows logo image only
+- Iterated through several logo files: `newlogo.png` → `usethis.png` → `newlogobanner.png` (current)
+- Current nav logo: `images/newlogobanner.png` at 200px height, `top: 24px` to drop below nav bar into hero
+- Nav bar set to `overflow: visible` so logo can extend below it into the hero section
+- Logo has `z-index: 1002` and `filter: drop-shadow` to sit clearly above hero content
+- Mobile nav height matched to desktop (96px); mobile logo also 200px to match desktop appearance
+- Replaced Our Story page image with `images/ourstory2.png`
+- Added favicon (`images/favicon.png`) to all 7 pages — shows logo icon in browser tab instead of generic globe
+- **Still pending:** Google search favicon will update after Google re-crawls site (can take weeks); contact form live test; decide whether to delete transition-demo.html and news.html
