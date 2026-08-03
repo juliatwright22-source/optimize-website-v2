@@ -962,14 +962,14 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 @media (max-width: 768px) {
-  :root { --nav-height: 64px; }
+  :root { --nav-height: 96px; }
   .container { padding: 0 20px; }
   .section { padding: 64px 0; }
 
   .nav-desktop { display: none; }
   .nav-toggle { display: flex; }
 
-  .header-logo img { height: 120px; }
+  .header-logo img { height: 200px; }
   .header-logo__name { font-size: 0.78rem; }
   .header-logo__tagline { font-size: 0.52rem; }
 
@@ -992,9 +992,7 @@ img { display: block; max-width: 100%; height: auto; }
   .hero__content { padding: 60px 20px; }
   h1 { font-size: 1.75rem; }
 
-  .header-logo img { height: 40px; }
-  .header-logo__name { font-size: 0.65rem; white-space: normal; }
-  .header-logo { gap: 8px; max-width: calc(100% - 60px); }
+  .header-logo img { height: 200px; }
 }
 
 /* ============================================================
