@@ -174,11 +174,11 @@ img { display: block; max-width: 100%; height: auto; }
   text-decoration: none;
 }
 .header-logo img {
-  height: 140px;
+  height: 200px;
   width: auto;
   position: relative;
   z-index: 1002;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
 }
 .header-logo__wordmark {
   display: flex;
@@ -969,7 +969,7 @@ img { display: block; max-width: 100%; height: auto; }
   .nav-desktop { display: none; }
   .nav-toggle { display: flex; }
 
-  .header-logo img { height: 90px; }
+  .header-logo img { height: 120px; }
   .header-logo__name { font-size: 0.78rem; }
   .header-logo__tagline { font-size: 0.52rem; }
 
