@@ -347,7 +347,7 @@ img { display: block; max-width: 100%; height: auto; }
    HERO
    ============================================================ */
 .hero {
-  min-height: 70vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
